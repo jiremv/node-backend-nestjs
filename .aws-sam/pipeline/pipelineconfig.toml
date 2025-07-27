@@ -1,0 +1,23 @@
+version = 0.1
+[default.pipeline_bootstrap.parameters]
+oidc_provider_url = "https://token.actions.githubusercontent.com"
+oidc_client_id = "sts.amazonaws.com"
+github_org = "jiremv"
+github_repo = "node-backend-nestjs"
+deployment_branch = "main"
+oidc_provider = "github-actions"
+permissions_provider = "OpenID Connect (OIDC)"
+
+[node-backend-nestjs-dev.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::545200407638:role/aws-sam-cli-managed-node-back-PipelineExecutionRole-qN2FcyXcUxOn"
+cloudformation_execution_role = "arn:aws:iam::545200407638:role/aws-sam-cli-managed-node--CloudFormationExecutionRo-PlGUYUxfsxUE"
+artifacts_bucket = "aws-sam-cli-managed-node-backend-n-artifactsbucket-aogosk8brhx3"
+image_repository = ""
+region = "us-east-1"
+
+[node-backend-nestjs-prod.pipeline_bootstrap.parameters]
+pipeline_execution_role = "arn:aws:iam::545200407638:role/aws-sam-cli-managed-node-back-PipelineExecutionRole-GykCgqTgJGVP"
+cloudformation_execution_role = "arn:aws:iam::545200407638:role/aws-sam-cli-managed-node--CloudFormationExecutionRo-L1WK3ZsEeXvR"
+artifacts_bucket = "aws-sam-cli-managed-node-backend-n-artifactsbucket-wnezs7ophynd"
+image_repository = ""
+region = "us-east-2"

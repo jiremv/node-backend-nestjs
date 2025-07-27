@@ -1,0 +1,19 @@
+# More information about the configuration file can be found here:
+# https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-config.html
+version = 0.1
+
+[default]
+[default.global.parameters]
+stack_name = "node-backend-nestjs"
+
+resolve_s3 = false
+s3_prefix = "node-backend-nestjs"
+region = "us-east-1"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"
+disable_rollback = false
+image_repositories = []
+parameter_overrides = "Environment=\"dev\""
+[default.deploy.parameters]
+resolve_s3 = false
+image_repositories = []

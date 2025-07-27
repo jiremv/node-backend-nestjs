@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-dynamodb-crud",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc"
+  },  
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.848.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.152",
+    "@types/node": "^24.1.0"
+  }  
+}
