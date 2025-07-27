@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "b0cfd8f7-e478-4e5f-b820-dc3a67bfc5e3",
+		"name": "Node_crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9885432"
+	},
+	"item": [
+		{
+			"name": "crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productoId\": \"3\",\r\n  \"nombre\": \"string\",\r\n  \"categoria\": \"string\",\r\n  \"precio\": 0,\r\n  \"fechaCreacion\": \"2025-07-27\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62quh72od5.execute-api.us-east-1.amazonaws.com/prod/productos/",
+					"protocol": "https",
+					"host": [
+						"62quh72od5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://62quh72od5.execute-api.us-east-1.amazonaws.com/prod/productos",
+					"protocol": "https",
+					"host": [
+						"62quh72od5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://62quh72od5.execute-api.us-east-1.amazonaws.com/prod/productos/1",
+					"protocol": "https",
+					"host": [
+						"62quh72od5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productoId\": \"1\",\r\n  \"nombre\": \"name\",\r\n  \"categoria\": \"category\",\r\n  \"precio\": 0,\r\n  \"fechaCreacion\": \"2025-07-23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://62quh72od5.execute-api.us-east-1.amazonaws.com/prod/productos/1",
+					"protocol": "https",
+					"host": [
+						"62quh72od5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://62quh72od5.execute-api.us-east-1.amazonaws.com/prod/productos/3",
+					"protocol": "https",
+					"host": [
+						"62quh72od5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
