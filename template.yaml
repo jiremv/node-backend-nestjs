@@ -274,7 +274,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: ReadProductoNode
-      Handler: handlers/producto/readProductoNode.handler
+      Handler: handlers/producto/readProducto.handler
       Runtime: nodejs18.x
       Role: !GetAtt ReadProductoNodeFunctionRole.Arn
       Events:
@@ -343,7 +343,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: BusquedaProductoNode
-      Handler: handlers/producto/busquedaProductoNode.handler
+      Handler: handlers/producto/busquedaProducto.handler
       Runtime: nodejs18.x
       Role: !GetAtt BusquedaProductoNodeFunctionRole.Arn
       Events:
@@ -412,7 +412,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: CrearProductoNode
-      Handler: handlers/producto/createProductoNode.handler
+      Handler: handlers/producto/createProducto.handler
       Runtime: nodejs18.x
       Role: !GetAtt CrearProductoNodeFunctionRole.Arn
       Events:
@@ -481,7 +481,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: UpdateProductoNode
-      Handler: handlers/producto/updateProductoNode.handler
+      Handler: handlers/producto/updateProducto.handler
       Runtime: nodejs18.x
       Role: !GetAtt UpdateProductoNodeFunctionRole.Arn
       Events:
@@ -551,7 +551,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: DeleteProductoNode
-      Handler: handlers/producto/deleteProductoNode.handler
+      Handler: handlers/producto/deleteProducto.handler
       Runtime: nodejs18.x
       Role: !GetAtt DeleteProductoNodeFunctionRole.Arn
       Events:
