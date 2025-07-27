@@ -412,7 +412,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: CrearProductoNode
-      Handler: handlers/producto/createProducto.handler
+      Handler: handlers/producto/crearProducto.handler
       Runtime: nodejs18.x
       Role: !GetAtt CrearProductoNodeFunctionRole.Arn
       Events:
